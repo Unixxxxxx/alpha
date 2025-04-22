@@ -28,7 +28,7 @@
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sudhanshuroyss&show_icons=true&theme=github_dark&hide_title=true" alt="Sudhanshu's GitHub Stats" />
+  <img src="https://github.com/Unixxxxxx" />
 </p>
 
 ---
