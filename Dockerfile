@@ -1,22 +1,17 @@
 # Use Python image
 FROM python:3.12-slim
 
-#Set working dir
+# Set working directory
 WORKDIR /alpha
 
-#Copy files 
+# Copy project files
 COPY . .
 
-#Install dependencies 
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip install --no--cache-dir -r requirements.txt 
+# Expose port
+EXPOSE 8000
 
-#Collect static files
-RUN python manage.py migrate 
-
-#Expose port 
-EXPOSE 80000
-
-# start server 
-CMD ["gunicon", "alpha.wsgi:application", "--bind", "0.0.0.0:80000"]
-
+# Start server
+CMD ["gunicorn", "alpha.wsgi:application", "--bind", "0.0.0.0:8000"]
