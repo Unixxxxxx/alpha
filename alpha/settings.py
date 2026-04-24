@@ -25,11 +25,19 @@ SECRET_KEY = "django-insecure-k8611csr#21ts(wqw4zhkz&it9fqbxx2-li8v)mk3c0$69g!e$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*', "alpha-production-779a.up.railway.app"]
+ALLOWED_HOSTS = ["alpha-production-779a.up.railway.app"]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://alpha-production-779a.up.railway.app",
 ]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+USE_X_FORWARDED_HOST = True
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+
 
 # Application definition
 
