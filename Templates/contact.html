@@ -1,7 +1,23 @@
-<h2>Contact Form</h2>
-
 <form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Submit</button>
+  {% csrf_token %}
+
+  <div class="field">
+    <label>Name</label>
+    {{ form.name }}
+    {{ form.name.errors }}
+  </div>
+
+  <div class="field">
+    <label>Email</label>
+    {{ form.email }}
+    {{ form.email.errors }}
+  </div>
+
+  <div class="field">
+    <label>Message</label>
+    {{ form.message }}
+    {{ form.message.errors }}
+  </div>
+
+  <button type="submit" class="btn">Send message</button>
 </form>
