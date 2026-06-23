@@ -487,7 +487,7 @@
     <div class="contact-cards">
       <a class="contact-card" href="mailto:sudhanshu@example.com">
         <span class="contact-card-icon">✉️</span>
-        <span class="contact-card-label">Email</span>
+        <span class="contact-card-label">Email<n>
         <span class="contact-card-value">sudhanshuroyss208@gmail.com</span>
       </a>
       <a class="contact-card" href="https://github.com/Unixxxxxx" target="_blank" rel="noreferrer">
@@ -497,7 +497,7 @@
       </a>
       <a class="contact-card" href="https://www.linkedin.com/in/sudhanshu-kumar-281a84204/">
         <span class="contact-card-icon">🔗</span>
-        <span class="contact-card-label">LinkedIn</span>
+    <span class="contact-card-label">LinkedIn</span>
         <span class="contact-card-value">Connect with me</span>
       </a>
       <a class="contact-card" href="{% url 'contact' %}">
@@ -512,7 +512,7 @@
 <!-- FOOTER -->
 <footer class="footer">
   <span>Designed & built by <strong>Sudhanshu Kumar</strong></span>
-  <span class="footer-sep">·</span>
+  <sn class="footer-sep">·</span>
   <span>Cyber Security Analyst</span>
 </footer>
 
@@ -526,7 +526,7 @@
     document.getElementById('navLinks').classList.toggle('open');
   });
   document.querySelectorAll('.nav-links a').forEach(a => {
-    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+    a.addEventListener('click', () => documentgetElementById('navLinks').classList.remove('open'));
   });
 
   // Typewriter
@@ -555,7 +555,7 @@ const skills = [
 
   // Network Security
   { name:'Nmap', cat:'Network Security', level:88, icon:'🗺️' },
-  { name:'Wireshark', cat:'Network Security', level:82, icon:'🦈' },
+  { name:'Wireshark', catcurity', level:82, icon:'🦈' },
 
   // Operating Systems
   { name:'Linux', cat:'Operating Systems', level:90, icon:'🐧' },
@@ -567,8 +567,7 @@ const skills = [
 
   // Development (Supportive Skills)
   { name:'Python', cat:'Backend Development', level:85, icon:'🐍' },
-  { name:'Django', cat:'Backend Development', level:80, icon:'🌿' },
-  { name:'Flask', cat:'Backend Development', level:78, icon:'⚙️' },
+  { name:'Django', cat:'Backend Development', level:80, iconname:'Flask', cat:'Backend Development', level:78, icon:'⚙️' },
 
   // Database
   { name:'MySQL', cat:'Database Management', level:82, icon:'🗄️' },
@@ -578,7 +577,7 @@ const skills = [
   { name:'SOC Operations', cat:'Cybersecurity', level:85, icon:'🛡️' },
   { name:'Threat Detection', cat:'Cybersecurity', level:88, icon:'🚨' },
   { name:'Incident Response', cat:'Cybersecurity', level:82, icon:'⚡' },
-  { name:'Log Analysis', cat:'Cybersecurity', level:87, icon:'📜' },
+  { name:'g Analysis', cat:'Cybersecurity', level:87, icon:'📜' },
   { name:'SIEM Correlation', cat:'Cybersecurity', level:83, icon:'🔗' },
 ];
   const grid = document.getElementById('skillsGrid');
@@ -586,7 +585,7 @@ const skills = [
     grid.innerHTML += `<div class="skill-card">
       <div class="skill-top"><span class="skill-icon">${s.icon}</span><span class="skill-cat">${s.cat}</span></div>
       <h3 class="skill-name">${s.name}</h3>
-      <div class="skill-bar-bg"><div class="skill-bar-fill" style="--level:${s.level}%"></div></div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" style="--level:${s.level}%"><></div>
       <span class="skill-pct">${s.level}%</span>
     </div>`;
   });
