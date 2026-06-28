@@ -61,6 +61,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     'about.middleware.BlockBadUrlsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'alpha.middleware.AdminIPWhitelistMiddleware',
 ]
 
 ROOT_URLCONF = "alpha.urls"
